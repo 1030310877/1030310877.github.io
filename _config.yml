@@ -1,6 +1,6 @@
 locale: "en-US"
-title: Joe Chan Web
-url: "http://1030310877.github.io/blog" # the base hostname & protocol for your site
+title: Joe Chan's Blog
+url: "http://1030301877.github.io" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/
 google_analytics_key: ""
 
@@ -13,7 +13,7 @@ description: > # this means to ignore newlines until "baseurl:"
 # Author details for the jekyll-seo-tag gem
 author:
   name: Joe Chan
-  email: chenqiao921107@gmail.com
+  email: chenqiao921197@gmail.com
   twitter: # twitter username without the @ symbol
 
 # Social details for the jekyll-seo-tag gem
