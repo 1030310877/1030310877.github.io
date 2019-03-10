@@ -2888,7 +2888,12 @@
 				padding: 6em 3em 3em 3em;
 				width: calc(100% - 30%);
 			}
-
+			#home_comment {
+				margin-left: 30%;
+				max-width: none;
+				padding: 6em 3em 3em 3em;
+				width: calc(100% - 30%);
+			}
 	}
 
 /* Medium */
@@ -2969,7 +2974,11 @@
 				padding: 6em 4em;
 				width: 100%;
 			}
-
+			#home_comment {
+				margin: 0;
+				padding: 6em 4em;
+				width: 100%;
+			}
 	}
 
 /* Small */
