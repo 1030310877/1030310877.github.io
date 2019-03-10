@@ -3036,6 +3036,15 @@
 					margin: 2.25em 0 0 0;
 					padding: 2.25em 0 0 0;
 				}
+				
+			#home_comment {
+				padding: 2.25em 1.5em 0.25em 1.5em;
+			}
+
+				#home_comment > section {
+					margin: 2.25em 0 0 0;
+					padding: 2.25em 0 0 0;
+				}
 
 		/* Poptrox */
 
