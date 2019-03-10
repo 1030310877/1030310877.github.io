@@ -54,3 +54,12 @@ social_icons:
   - Twitter
   - YouTube
   - RSS
+  
+ gitalk:
+  enable: true    #是否开启评论
+  clientID: 28cf53d945352304ffab                            #生成的clientID
+  clientSecret: 86c14e036bb28b1465d20416d6a4d122a700c50c    #生成的clientSecret
+  repo: 1030310877.github.io    #仓库名称
+  owner: 1030310877    #github用户名
+  admin: 1030310877	
+  distractionFreeMode: true #是否启用阴影遮罩
