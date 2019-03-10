@@ -16,6 +16,8 @@ author:
   email: chenqiao921197@gmail.com
   twitter: # twitter username without the @ symbol
 
+plugins:
+  - jekyll-feed
 # Social details for the jekyll-seo-tag gem
 social:
   name: Strata Reloaded Template
