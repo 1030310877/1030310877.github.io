@@ -38,7 +38,7 @@ date: 2019-03-10
 
 在cocos creator的菜单栏的项目中，找到项目设置，将不需要的模块取消勾选即可。
 
-![1](images/2019-03-10/1.jpg)
+![1](http://1030310877.github.io/images/2019-03-10/1.jpg)
 
 ### 生成Android项目
 
@@ -48,7 +48,7 @@ date: 2019-03-10
 
 生成好Android项目后，打开项目的build文件夹。可以看到这是个cocos项目中包了个Android项目，我们实际需要的是Android项目中包个cocos项目。因此接下来我们开始分析这个项目结构。
 
-![2](images/2019-03-10/2.jpg)
+![2](http://1030310877.github.io/images/2019-03-10/2.jpg)
 
 - cocos-project-template.json — Cocos Creator生成的部分项目配置，不用管
 - frameworks — 生成的Android项目、IOS项目等都在里面
