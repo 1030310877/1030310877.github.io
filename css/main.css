@@ -2557,6 +2557,9 @@
 				margin-top: 0;
 				padding-top: 0;
 			}
+				#main > section > img (
+					width: 100%;
+				)
 	#home_comment {
 		margin-left: 35%;
 		max-width: 54em;
@@ -2888,6 +2891,9 @@
 				padding: 6em 3em 3em 3em;
 				width: calc(100% - 30%);
 			}
+				#main > section > img (
+					width: 100%;
+				)
 			#home_comment {
 				margin-left: 30%;
 				max-width: none;
@@ -2974,6 +2980,9 @@
 				padding: 6em 4em;
 				width: 100%;
 			}
+				#main > section > img (
+					width: 100%;
+				)
 			#home_comment {
 				margin: 0;
 				padding: 6em 4em;
@@ -3046,6 +3055,9 @@
 					padding: 2.25em 0 0 0;
 				}
 				
+				#main > section > img (
+					width: 100%;
+				)
 			#home_comment {
 				padding: 2.25em 1.5em 0.25em 1.5em;
 			}
