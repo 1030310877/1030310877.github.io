@@ -2557,9 +2557,7 @@
 				margin-top: 0;
 				padding-top: 0;
 			}
-				#main > article > section > p > img (
-					width: 100%;
-				)
+
 	#home_comment {
 		margin-left: 35%;
 		max-width: 54em;
@@ -2570,6 +2568,10 @@
 			border-top: solid 2px #efefef;
 			margin: 4em 0 0 0;
 			padding: 4em 0 0 0;
+	}
+	
+	img {
+		max-width: 100%;
 	}
 /* Poptrox */
 
@@ -2846,6 +2848,10 @@
 			body, input, select, textarea {
 				font-size: 12pt;
 			}
+			
+			img {
+		max-width: 100%;
+	}
 
 	}
 
@@ -2891,15 +2897,16 @@
 				padding: 6em 3em 3em 3em;
 				width: calc(100% - 30%);
 			}
-				#main > article > section > p > img (
-					width: 100%;
-				)
+
 			#home_comment {
 				margin-left: 30%;
 				max-width: none;
 				padding: 6em 3em 3em 3em;
 				width: calc(100% - 30%);
 			}
+			img {
+		max-width: 100%;
+	}
 	}
 
 /* Medium */
@@ -2980,14 +2987,15 @@
 				padding: 6em 4em;
 				width: 100%;
 			}
-				#main > article > section > p >img (
-					width: 100%;
-				)
+
 			#home_comment {
 				margin: 0;
 				padding: 6em 4em;
 				width: 100%;
 			}
+			img {
+		max-width: 100%;
+	}
 	}
 
 /* Small */
@@ -3055,9 +3063,6 @@
 					padding: 2.25em 0 0 0;
 				}
 				
-				#main > article > section > p > img (
-					width: 100%;
-				)
 			#home_comment {
 				padding: 2.25em 1.5em 0.25em 1.5em;
 			}
@@ -3066,7 +3071,9 @@
 					margin: 2.25em 0 0 0;
 					padding: 2.25em 0 0 0;
 				}
-
+img {
+		max-width: 100%;
+	}
 		/* Poptrox */
 
 			.poptrox-popup {
@@ -3137,7 +3144,9 @@
 				margin-left: 0;
 				padding-left: 0;
 			}
-
+img {
+		max-width: 100%;
+	}
 	}
 
 
