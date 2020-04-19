@@ -1,74 +1,46 @@
 ---
 layout: default
 ---
-<div id="main">
-  <article>
-    <header>
-      <h1 class="post-title">{{ page.title }}</h1>
-      <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-    </header>
 
-    <section>
-      {{ content }}
-    </section>
-	
-	<!--Gitalk评论start  -->
-	<!-- 引入Gitalk评论插件  -->
-	<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-	<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
-	<div id="gitalk-container"></div>
-	<!-- 引入一个生产md5的js，用于对id值进行处理，防止其过长 -->
-	<!-- Thank DF:https://github.com/NSDingFan/NSDingFan.github.io/issues/3#issuecomment-407496538 -->
-	<script src="https://1030310877.github.io/js/md5.min.js"></script>
-	<script type="text/javascript">
-    var gitalk = new Gitalk({
-        clientID: '28cf53d945352304ffab',
-        clientSecret: '86c14e036bb28b1465d20416d6a4d122a700c50c',
-        repo: '1030310877.github.io',
-        owner: '1030310877',
-        admin: ['1030310877'],
-        distractionFreeMode: true,
-		id: md5(location.pathname),
-		labels:['{{page.title}}','{{page.categories}}'],
-    });
-    gitalk.render('gitalk-container');
-	</script>
-	<!-- Gitalk end -->
-	
-    <footer>
-      <div class="row">
-      {% if page.previous %}
-        <article class="{% cycle '6u', '6u$' %} 12u(small) excerpt">
-          <header>
-            <h2><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></h2>
-          </header>
-          <section>
-            {{ page.previous.excerpt }}
-          </section>
-          <footer>
-            <ul class="actions">
-              <li><a href="{{ page.previous.url }}" class="button">Read More</a></li>
-            </ul>
-          </footer>
-        </article>
-      {% endif %}
+<article class="posts">
+  <h1>{{ page.title }}</h1>
 
-      {% if page.next %}
-        <article class="{% cycle '6u', '6u$' %} 12u(small) excerpt f-right">
-          <header>
-            <h2><a href="{{ page.next.url }}">{{ page.next.title }}</a></h2>
-          </header>
-          <section>
-            {{ page.next.excerpt | markdownify }}
-          </section>
-          <footer>
-            <ul class="actions">
-              <li><a href="{{ page.next.url }}" class="button">Read More</a></li>
-            </ul>
-          </footer>
-        </article>
-      {% endif %}
-      </div>
-    </footer>
-  </article>
+  <div clsss="meta">
+    <span class="date">
+      {{ page.date | date: "%Y-%m-%d" }}
+    </span>
+
+    <ul class="tag">
+      {% for tag in page.tags %}
+      <li>
+        <a href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">
+          {{ tag }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  {% include disqus.html %}
+</article>
+
+<div class="pagination">
+  {% if page.previous.url %}
+    <span class="prev" >
+      <a href="{{ site.url }}{{ site.baseurl }}{{ page.previous.url }}">
+        ← 上一篇
+      </a>
+    </span>
+  {% endif %}
+  {% if page.next.url %}
+    <span class="next" >
+      <a href="{{ site.url }}{{ site.baseurl }}{{ page.next.url }}">
+        下一篇 →
+      </a>
+    </span>
+  {% endif %}
 </div>
