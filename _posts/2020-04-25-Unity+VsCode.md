@@ -2,6 +2,7 @@
 layout: post
 title: Untiy从入门到自闭(一)——VS环境搭建
 categories: unity
+tags: [unity, vscode]
 date: 2020-04-25
 ---
 
