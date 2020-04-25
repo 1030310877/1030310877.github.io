@@ -14,13 +14,13 @@ date: 2020-04-25
 
 ### 安装VsCode插件
 
-<img src="images/image-20200425192827275.png" alt="image-20200425192827275" style="zoom: 67%;" />
+<img src="images/image-20200425192827275.png" style="zoom: 67%;" />
 
 ### 修改Untiy配置
 
 新建一个Untiy项目，打开菜单栏Edit——Preferences——External Tools，修改External Script Editor为Visual Studio Code，勾选Generate all .csproj files选项。
 
-<img src="images/image-20200425193234484.png" alt="image-20200425193234484" style="zoom:50%;" />
+<img src="images/image-20200425193234484.png" style="zoom:50%;" />
 
 ### 使用VsCode进行开发
 
